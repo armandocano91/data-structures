@@ -7,9 +7,7 @@ var Queue = function() {
  var lastIndex = 0;
  var index = 0;
  var length = 0;
-
-
-
+ 
  someInstance.enqueue = function(value) {
 
    storage[index++] = value;
@@ -29,6 +27,5 @@ var Queue = function() {
 
    return length;
  };
-
  return someInstance;
 };

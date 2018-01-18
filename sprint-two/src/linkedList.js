@@ -4,6 +4,16 @@ var LinkedList = function() {
   list.tail = null;
 
   list.addToTail = function(value) {
+    LinkedList.prototype.addToTail = function(vae) {
+      var nodeData = Node(value)
+      if (list.head === null){
+        list.head = nodeData
+        list.tail = list.head
+      } else {
+        list.tail.next = nodeData
+        list.tail = list.tail.next
+      }
+    };
   };
 
   list.removeHead = function() {
